@@ -1,0 +1,8 @@
+//
+// Created by chenxin on 2021/12/28.
+//
+#ifndef GLIDEHEIFDECODER_HEIFDECODER_H
+#define GLIDEHEIFDECODER_HEIFDECODER_H
+#include <jni.h>
+
+#endif //GLIDEHEIFDECODER_HEIFDECODER_H
