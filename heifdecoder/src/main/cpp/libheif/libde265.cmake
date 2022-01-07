@@ -16,6 +16,6 @@ FetchContent_MakeAvailable(libde265)
 set(LIBDE265_FOUND 1)
 set(LIBDE265_LIBRARIES libde265)
 set(LIBDE265_INCLUDE_DIR
-  "${libde265_SOURCE_DIR}"
-  "${libde265_BINARY_DIR}"
-)
+        "${libde265_SOURCE_DIR}"
+        "${libde265_BINARY_DIR}"
+        )
