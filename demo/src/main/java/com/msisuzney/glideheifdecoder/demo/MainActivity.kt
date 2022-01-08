@@ -12,7 +12,7 @@ class MainActivity : Activity() {
         setContentView(R.layout.activity_main)
         val iv = findViewById<ImageView>(R.id.iv)
         val iv2 = findViewById<ImageView>(R.id.iv2)
-        Glide.with(this).load(R.raw.example1).into(iv)
-        Glide.with(this).load(R.raw.example).into(iv2)
+        Glide.with(this).load(R.raw.avif_example).into(iv)
+        Glide.with(this).load(R.raw.heic_example).into(iv2)
     }
 }

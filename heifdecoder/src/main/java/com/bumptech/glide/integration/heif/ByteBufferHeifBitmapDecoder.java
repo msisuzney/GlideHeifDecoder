@@ -30,7 +30,7 @@ public class ByteBufferHeifBitmapDecoder implements ResourceDecoder<ByteBuffer, 
     @Override
     public boolean handles(@NonNull ByteBuffer source, @NonNull Options options) throws IOException {
         HeifImageHeaderParser.HeifImageType imageType = HeifImageHeaderParser.getType(source);
-        return imageType == HeifImageHeaderParser.HeifImageType.AVIF || imageType == HeifImageHeaderParser.HeifImageType.HEIF;
+        return imageType == HeifImageHeaderParser.HeifImageType.AVIF || imageType == HeifImageHeaderParser.HeifImageType.HEIC;
     }
 
 

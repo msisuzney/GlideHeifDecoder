@@ -27,7 +27,7 @@ public class StreamBitmapHeifDecoder implements ResourceDecoder<InputStream, Bit
     @Override
     public boolean handles(@NonNull InputStream source, @NonNull Options options) throws IOException {
         HeifImageHeaderParser.HeifImageType imageType = HeifImageHeaderParser.getType(source, byteArrayPool);
-        return imageType == HeifImageHeaderParser.HeifImageType.AVIF || imageType == HeifImageHeaderParser.HeifImageType.HEIF;
+        return imageType == HeifImageHeaderParser.HeifImageType.AVIF || imageType == HeifImageHeaderParser.HeifImageType.HEIC;
     }
 
     @Override

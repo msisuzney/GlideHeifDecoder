@@ -86,7 +86,7 @@ public class HeifImageHeaderParser {
             return HeifImageType.AVIF;
         }
         if (brand == HEIC_BRAND || brand == MIF1_BRAND) {
-            return HeifImageType.HEIF;
+            return HeifImageType.HEIC;
         }
         // Skip the minor version.
         reader.skip(4);
@@ -103,14 +103,14 @@ public class HeifImageHeaderParser {
                 return HeifImageType.AVIF;
             }
             if (brand == HEIC_BRAND || brand == MIF1_BRAND) {
-                return HeifImageType.HEIF;
+                return HeifImageType.HEIC;
             }
         }
         return HeifImageType.NONE_HEIF;
     }
 
     public enum HeifImageType {
-        HEIF,
+        HEIC,
         AVIF,
         NONE_HEIF
     }
